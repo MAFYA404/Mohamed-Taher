@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <link rel="icon" type="image/png" href="https://yt3.ggpht.com/w8C4QYl8c4iy9BuDeQEBOggs8cZfHKftCIE3gL-9TdAOpY64C4zLr-oxagnDMiknBUrohkbD=s600-c-k-c0x00ffffff-no-rj-rp-mo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yahya's personal portfolio showcasing skills and contact information.">
+    <title>Mohamed Taher</title>
+    <link href="https://yt3.ggpht.com/w8C4QYl8c4iy9BuDeQEBOggs8cZfHKftCIE3gL-9TdAOpY64C4zLr-oxagnDMiknBUrohkbD=s600-c-k-c0x00ffffff-no-rj-rp-mo" rel="stylesheet">
+    <script type="text/javascript" src="https://yt3.ggpht.com/w8C4QYl8c4iy9BuDeQEBOggs8cZfHKftCIE3gL-9TdAOpY64C4zLr-oxagnDMiknBUrohkbD=s600-c-k-c0x00ffffff-no-rj-rp-mo" charset="UTF-8"></script><style>
+        body {
+            font-family: 'Cairo', 'Poppins', sans-serif;
+            overflow: hidden; 
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', 'Montserrat', sans-serif;
+            transition: all 0.3s ease-in-out;
+        }
+        body {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            transition: background 0.5s, color 0.5s;
+        }
+        nav {
+            background: linear-gradient(45deg, #000000, #ffffff);
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: right;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a, button {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        nav ul li a:hover, button:hover {
+            color: #ffcc00; 
+        }
+        section {
+            padding: 100px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .skill-card {
+            background: linear-gradient(45deg, #ff00665c, #6600ff56); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .skill-card:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #ff00662d, #6600ff2f); 
+        }
+        .image-gallery {
+            display: none;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .image-gallery img {
+            width: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            transition: transform 0.3s;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.1);
+        }
+   
+        #graphic img {
+            aspect-ratio: 1 / 1; 
+        }
+        #photography img {
+            aspect-ratio: 3 / 4;
+        }
+        #digital-art img {
+            aspect-ratio: 9 / 16; 
+        }
+        .profile-pic {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: 3px solid #ff0000; 
+            box-shadow: 0 0 30px #0d00ffad; 
+            margin-bottom: 15px;
+        }
+        .social-icons a {
+            margin: 10px;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #ffcc00; 
+        }
+        .contact-section {
+            background: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 100px 20px;
+            transition: background 0.5s, color 0.5s;
+        }
+        .contact-section h1 {
+            font-size: 3.5rem;
+            color: #000000;
+        }
+        .contact-section p {
+            font-size: 1.4rem;
+            margin: 10px 0 40px;
+        }
+        .contact-section .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+        .contact-section .social-icons a {
+            text-decoration: none;
+            color: #fff;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .contact-section .social-icons a:hover {
+            transform: scale(1.2);
+        }
+        .contact-section .social-icons img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .info p {
+            font-size: 1.2rem;
+            margin: 5px 0;
+        }
+
+        #skills h2 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+            <li><a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a></li>
+            <li><a href="#contact" data-en="Contact" data-ar="التواصل">Contact</a></li>
+            <li><button id="language-toggle" aria-label="Change Language">العربية</button></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <img src="https://yt3.ggpht.com/w8C4QYl8c4iy9BuDeQEBOggs8cZfHKftCIE3gL-9TdAOpY64C4zLr-oxagnDMiknBUrohkbD=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="Profile Picture" class="profile-pic">
+        <div class="info">
+            <h1 data-en="Mohamed Taher Nabil Elsheikh" data-ar="محمد طاهر نبيل الشيخ">Mohamed Taher Nabil Elsheikh</h1>
+            <p data-en="tmmohamed404@gmail.com" data-ar="tmmohamed404@gmail.com">tmmohamed404@gmail.com</p>
+            <p data-en="" data-ar=""></p>
+            <p data-en="Egypt, Tanta, kafr elzayat" data-ar="مصر، طنطا،كفر الزيات">Egypt, Tanta, kafr elzayat</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2 data-en="Skills" data-ar="المهارات">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card" onclick="showImages('3d-designer')" data-en="3D Designer" data-ar="ديزاين ثلاثي الابعاد"> Graphic Design</div>
+            <div class="skill-card" onclick="showImages('Programming')" data-en="Programming" data-ar="برمجه"> Programming</div>
+            <div class="skill-card" onclick="showImages('web-dev')" data-en="Web Development" data-ar="إنشاء مواقع إلكترونية"> Web Development</div>
+        </div>
+            <div style="font-size: 20px;" id="web-dev" class="image-container">
+                <p data-en="." data-ar=".">.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <h1 data-en="Welcome to Yahya Atwa’s Contact Page" data-ar="مرحبًا بكم في صفحة التواصل الخاصة بمحمد طاهر">Welcome to Mohamed Taher’s Contact Page</h1>
+        <p data-en="Feel free to connect with me through any of the platforms below:" data-ar=":يمكنك التواصل معي عبر أي من المنصات التالية">Feel free to connect with me through any of the platforms below:</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100081742875029" target="_blank" title="Facebook">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Facebook">
+            </a>
+            <a href="" target="_blank" title="Instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/2001282422444" target="_blank" title="WhatsApp">
+                <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.tiktok.com/@mafya_404" target="_blank" title="TikTok">
+                <img src="https://static.sayidaty.net/styles/900_scale/public/2021-12/33710.jpeg.webp" alt="TikTok">
+            </a>
+            <a href="https://www.pinterest.com/tmmohamed404/" target="_blank" title="Pinterest">
+                <img src="https://i.pinimg.com/280x280_RS/fd/d2/98/fdd2982c1256e0ce15fae785c7eec669.jpg" alt="Pinterest">
+            </a>
+            <a href="https://www.snapchat.com/add/tmmohamed2009" target="_blank" title="Snapchat">
+                <img src="https://img.utdstc.com/icon/f34/805/f34805cdd3d43b7ab36b39621fc47de11263f0f53c3460f9186ba293f2696cef:200" alt="Snapchat">
+            </a>
+            <a href="mailto:tmmohamed404@gmail.com" target="_blank" title="Email">
+                <img src="https://i.pinimg.com/originals/88/e1/4c/88e14cc7e7fcbb0e0e09de26cec86c61.png" alt="Email">
+            </a>
+            <a href="" target="_blank" title="Telegram">
+                <img src="https://store-images.s-microsoft.com/image/apps.55245.13537716651231321.3067a421-6c2f-48a9-b77c-1e38e19146e6.10e2aa49-52ca-4e79-9a61-b6422978afb9" alt="Telegram">
+            </a>
+        </div>
+    </section>
+    <script>
+
+        function showImages(skill) {
+            const gallery = document.getElementById('image-gallery');
+            const imageContainers = document.querySelectorAll('.image-container');
+
+
+            imageContainers.forEach(container => {
+                container.style.display = 'none';
+            });
+
+            const selectedContainer = document.getElementById(skill);
+            if (selectedContainer) {
+                selectedContainer.style.display = 'block';
+                gallery.style.display = 'flex';
+            }
+        }
+
+
+        const languageToggle = document.getElementById('language-toggle');
+        const elementsToTranslate = document.querySelectorAll('[data-en], [data-ar]');
+
+        let currentLanguage = 'en';
+
+        languageToggle.addEventListener('click', () => {
+            currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+            document.documentElement.lang = currentLanguage;
+
+            elementsToTranslate.forEach(element => {
+                if (currentLanguage === 'en') {
+                    element.textContent = element.getAttribute('data-en');
+                } else {
+                    element.textContent = element.getAttribute('data-ar');
+                }
+            });
+
+            languageToggle.textContent = currentLanguage === 'en' ? 'العربية' : 'English';
+        });
+
+        document.body.style.overflow = 'hidden';
+    </script>
+</body>
+</html>
